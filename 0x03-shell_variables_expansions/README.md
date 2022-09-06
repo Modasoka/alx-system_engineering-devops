@@ -1,0 +1,1 @@
+each script displays a value that serves to solve the problem in question
