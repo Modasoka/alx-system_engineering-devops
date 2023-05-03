@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#disply string
+i=1; while [ $i -le 10 ]; do echo "Best School"; i=$(( i + 1 )); done
