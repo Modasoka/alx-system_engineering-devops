@@ -1,0 +1,15 @@
+0x07. Networking Basics #0
+- OSI model
+- different network types
+- LAN network
+- WAN network
+- Internet
+- MAC address
+- IP address
+- private & public address
+- IPv4 & IPv6
+- localhost
+- TCP & UDP
+- TCP/UDP ports list
+- ping/ICMP
+- positional parameters
