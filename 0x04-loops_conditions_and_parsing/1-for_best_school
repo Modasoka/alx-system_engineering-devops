@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#display string
-for _ in {1..10}; do echo "Best School"; done

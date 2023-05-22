@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-#disply content of dir
-for file in *; do
-    if [[ $file != .* ]]; then
-        name=$(echo "$file" | cut -f2 -d "-")
-        echo "$name"
-    fi
-done

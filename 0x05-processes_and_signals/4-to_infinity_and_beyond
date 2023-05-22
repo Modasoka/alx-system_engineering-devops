@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#display string
-while :
-do
-    echo "To inifinity and beyond"
-    sleep 2
-done

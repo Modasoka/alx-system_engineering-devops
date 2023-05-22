@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-#display strings
-trap 'echo "I am invincible!!!"' SIGTERM
-while :
-do
-    echo "To inifinity and beyond"
-    sleep 2
-done
