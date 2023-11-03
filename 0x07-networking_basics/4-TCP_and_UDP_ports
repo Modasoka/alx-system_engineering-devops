@@ -1,3 +1,5 @@
 #!/usr/bin/bash
-
+# this script displays listening ports
+# 	only shows listening sockets
+#	shows PID & name of prgm each socket belongs to
 netstat -lp
