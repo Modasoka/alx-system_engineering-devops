@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # This script changes the localhost address
 cp /etc/hosts ~/hosts.new
 echo "127.0.0.2 local" > ~/hosts.new
