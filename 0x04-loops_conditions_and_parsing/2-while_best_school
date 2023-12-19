@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+count=1
+while [ $count -le 10 ]; do
+    echo $"Best School"
+    ((count++))
+done
+
+
+# display Best School 10 times using while loops
+# num=1
+# while [[ $num -le 10 ]]; do
+# 	echo $(($num * 3))
+# 	num=$(($num+1))
+# done
