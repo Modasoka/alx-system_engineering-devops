@@ -43,6 +43,8 @@ $ apt-get install -y ruby-shadow
 $ apt-get install -y puppet
 ```
 
+## Install ```puppet-lint```
+
 ## Getting Started
 
 To start using this configuration management project, follow these steps:
