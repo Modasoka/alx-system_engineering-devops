@@ -35,6 +35,14 @@ Before diving into the project, it's recommended to go through the following res
    - The first line of each Puppet manifest must be a comment explaining its purpose.
    - Manifest files must have the extension `.pp`.
 
+## Install puppet
+```
+$ apt-get install -y ruby=1:2.7+1 --allow-downgrades
+$ apt-get install -y ruby-augeas
+$ apt-get install -y ruby-shadow
+$ apt-get install -y puppet
+```
+
 ## Getting Started
 
 To start using this configuration management project, follow these steps:
