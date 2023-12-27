@@ -46,6 +46,10 @@ $ apt-get install -y puppet
 
 ## Install ```puppet-lint```
 
+```
+$ gem install puppet-lint
+```
+
 ## Getting Started
 
 To start using this configuration management project, follow these steps:
