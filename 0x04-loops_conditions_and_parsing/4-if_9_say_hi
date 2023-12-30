@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# use while loop & if statement to display a different
+# string during the 9th iteration
+count=1
+str="Best School"
+while [[ "$count" -le 10 ]]; do
+	echo "$str"
+	if [[ "$count" == 9 ]]; then
+		echo "Hi"
+	fi
+	((count++))
+done
