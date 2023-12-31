@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# use for loop to display contents of current directory
+for ii in *;
+do
+	if [[ "$ii" != "*" ]];
+	then
+		echo "$ii" | cut -f2 -d "-" ;
+	fi
+done
