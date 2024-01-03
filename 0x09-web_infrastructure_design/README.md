@@ -70,6 +70,17 @@ Upon completion of this project, you should be able to:
     -   Acronyms: LAMP, SPOF, QPS
 -   Insert links to your whiteboarded diagrams and [Github](https://github.com/WambuaJoe/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design) repository.
 
+## Learn More
+- ``` System Redundancy ```: refers to the implementation of backup components or systems to ensure continuous operation even if one part fails. This is crucial for preventing downtime and maintaining reliability. Redundancy can be achieved through practices like having backup servers, load balancing, and failover mechanisms. In the context of this project, your system should have built-in redundancies to handle failures gracefully and ensure uninterrupted service.
+- Acronyms:
+    - LAMP: stands for  ``` Linux, Apache, MySQL, and PHP/Python/Perl ```. It represents a popular technology stack for building and hosting dynamic web applications.
+
+        - Linux: The operating system.
+        - Apache: The web server software.
+        - MySQL: The relational database management system.
+        - PHP/Python/Perl: The programming language for server-side scripting.
+    - SPOF: ``` Single Point of Failure ```, refers to a component in a system that, if it fails, will bring down the entire system. To address SPOFs, it's crucial to identify and eliminate or mitigate such vulnerabilities in your infrastructure. Redundancy and failover mechanisms are commonly employed to prevent a single point of failure from impacting the entire system.
+    - QPS: ``` Queries Per Second ```, is a metric used to measure the number of queries a system can handle in one second. In the context of web infrastructure, optimizing for QPS is essential for ensuring that the system can efficiently process and respond to user requests. This involves fine-tuning the system's performance, optimizing database queries, and implementing caching mechanisms to handle a specific volume of queries per second effectively.
 ## Conclusion
 
 
