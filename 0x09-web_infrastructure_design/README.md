@@ -1,11 +1,11 @@
-# <center> Web Infrastructure Design </center>
+# Web Infrastructure Design
 
 
-## <center> Description </center>
+## Description
 
 This project focuses on understanding and implementing key concepts related to web infrastructure design. The primary areas covered include DNS, monitoring, web servers, network basics, load balancers, and servers. The goal is to create a well-organized and comprehensive web stack, ensuring system redundancy and addressing potential single points of failure.
 
-## <center> Learning Objectives </center>
+## Learning Objectives
 
 
 Upon completion of this project, you should be able to:
@@ -15,7 +15,7 @@ Upon completion of this project, you should be able to:
 -   Describe system redundancy strategies.
 -   Understand and use acronyms such as LAMP, SPOF, and QPS.
 
-## <center> Requirements </center>
+## Requirements
 
 
 ### General
@@ -30,7 +30,7 @@ Upon completion of this project, you should be able to:
 -   **GitHub Link**: Push the answer file to GitHub and insert the GitHub file link into the provided URL box.
 -   **Whiteboarding**: Perform whiteboarding sessions for each task without using a computer or notes.
 
-## <center> Tasks </center>
+## Tasks
 
 ### Task 1: DNS Configuration
 
@@ -70,7 +70,7 @@ Upon completion of this project, you should be able to:
     -   Acronyms: LAMP, SPOF, QPS
 -   Insert links to your whiteboarded diagrams and [Github](https://github.com/WambuaJoe/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design) repository.
 
-## <center> Conclusion </center>
+## Conclusion
 
 
 This project aims to provide a practical understanding of web infrastructure design concepts. It encourages clear documentation and effective communication of the implemented system. Follow the outlined steps, keeping the focus on meeting the requirements and showcasing your understanding of the key concepts.
