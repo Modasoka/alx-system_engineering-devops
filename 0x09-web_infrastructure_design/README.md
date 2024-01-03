@@ -20,7 +20,7 @@ Upon completion of this project, you should be able to:
 
 ### General
 
--   **README.md**: Include a comprehensive README file at the root of the project folder.
+-   **README.md**: Include a comprehensive [README](https://github.com/WambuaJoe/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/README.md) file at the root of the project folder.
 
 ### Task-specific
 
