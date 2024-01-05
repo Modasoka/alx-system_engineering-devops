@@ -39,17 +39,17 @@ Upon completion of this project, you should be able to:
 ### Task 2: IP Address 0.0.0.0
 
 -   **Objective**: Understand the purpose of IP address 0.0.0.0 in networking.
-	**0.0.0.0**: In networking, 0.0.0.0 is a special IP address with different meanings in various contexts. In the context of listening sockets, it usually means "any available interface" or "any address."
+	-   **0.0.0.0**: In networking, 0.0.0.0 is a special IP address with different meanings in various contexts. In the context of listening sockets, it usually means "any available interface" or "any address."
 
 ### Task 3: /etc/hosts File
 
 -   **Objective**: Describe the role and function of the /etc/hosts file.
-	**/etc/hosts file**: This file is a plain text file used to map IP addresses to hostnames on a local machine. When you enter a hostname in a web browser, for example, the system checks the /etc/hosts file before querying DNS servers. It allows you to override DNS entries locally.
+	-   **/etc/hosts file**: This file is a plain text file used to map IP addresses to hostnames on a local machine. When you enter a hostname in a web browser, for example, the system checks the /etc/hosts file before querying DNS servers. It allows you to override DNS entries locally.
 
 ### Task 4: Display Active Network Interfaces
 
 -   **Objective**: Use `ifconfig` to display information about your machine's active network interfaces.
-	**ifconfig**: This command stands for "interface configuration" and is used to display information about active network interfaces on a system. It provides details such as IP addresses, MAC addresses, and network-related statistics for each interface.
+	-   **ifconfig**: This command stands for "interface configuration" and is used to display information about active network interfaces on a system. It provides details such as IP addresses, MAC addresses, and network-related statistics for each interface.
 
 These tools are fundamental for networking and system administration tasks, providing insights into network configurations, addressing, and connectivity. Understanding how these tools work is essential for effectively managing and troubleshooting network-related issues.
 
