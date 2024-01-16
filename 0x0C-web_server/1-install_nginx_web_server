@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# configure new Ubuntu machine using a bash script
+# install Nginx
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# setup custom HTML file
+cat <<- _EOF_ /var/www/html/index.html
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+	<body>
+		<h1>Hello World!</h1>
+	</body>
+	</html>
+_EOF_
+
+# config Nginx to listen on port 80
+cat <<- _EOF_ /etc/nginx/sites_available/default
+	server {
+		location / {
+			root /var/ww/html;
+			index.html;
+		}
+	}
+_EOF_
+
+# start Nginx
+sudo service nginx start
