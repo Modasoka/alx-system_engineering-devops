@@ -20,6 +20,10 @@ EOF
 # config Nginx to listen on port 80
 sudo cat <<- EOF > /etc/nginx/sites_available/default
 	server {
+		listen 80;
+		server_name _;
+		add_header X-Served-By $hostname;
+		
 		location / {
 			root /var/ww/html;
 			index.html;
