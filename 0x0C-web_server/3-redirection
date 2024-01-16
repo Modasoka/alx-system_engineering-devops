@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# configure new Ubuntu machine using a bash script
+# install Nginx
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# setup custom HTML file
+sudo cat <<- EOF > /var/www/html/index.html
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+	<body>
+		<h1>Hello World!</h1>
+	</body>
+	</html>
+EOF
+
+# config Nginx to listen on port 80
+sudo cat <<- EOF > /etc/nginx/sites-available/default
+	server {
+		listen 80;
+		server_name _;
+		add_header X-Served-By \$hostname;
+
+		location / {
+			root /var/www/html;
+			index.html;
+		}
+		location /redirect_me {
+			return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+		}
+	}
+EOF
+
+# start Nginx
+sudo service nginx start
