@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y nginx
 
 # setup custom HTML file
-sudo cat <<- _EOF_ > /var/www/html/index.html
+sudo cat <<- EOF > /var/www/html/index.html
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -15,17 +15,17 @@ sudo cat <<- _EOF_ > /var/www/html/index.html
 		<h1>Hello World!</h1>
 	</body>
 	</html>
-_EOF_
+EOF
 
 # config Nginx to listen on port 80
-sudo cat <<- _EOF_ > /etc/nginx/sites_available/default
+sudo cat <<- EOF > /etc/nginx/sites_available/default
 	server {
 		location / {
 			root /var/ww/html;
 			index.html;
 		}
 	}
-_EOF_
+EOF
 
 # start Nginx
 sudo service nginx start
