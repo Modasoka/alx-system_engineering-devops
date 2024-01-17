@@ -17,16 +17,8 @@ cat <<- EOF > sudo /var/www/html/index.html
 EOF
 
 # custom 404 page with string
-cat <<- EOF > sudo /var/www/html/404.html
-	<!DOCTYPE html>
-	<html>
-	<head>
-    	<title>404 Not Found</title>
-	</head>
-	<body>
-    	<h1>Ceci n'est pas une page</h1>
-	</body>
-	</html>
+cat <<- EOF > /var/www/html/404.html
+	Ceci n'est pas une page
 EOF
 
 # stop server before making any changes to config
