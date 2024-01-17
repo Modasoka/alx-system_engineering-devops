@@ -17,9 +17,10 @@ cat <<- EOF > sudo /var/www/html/index.html
 EOF
 
 # custom 404 page with string
-cat <<- EOF > sudo /var/www/html/404.html
-	Ceci n'est pas une page
-EOF
+# cat <<- EOF > sudo /var/www/html/404.html
+# 	Ceci n'est pas une page
+# EOF
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 
 # stop server before making any changes to config
 sudo service nginx stop
