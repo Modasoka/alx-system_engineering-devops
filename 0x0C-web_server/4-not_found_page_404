@@ -25,7 +25,7 @@ EOF
 # sudo service nginx stop
 
 # config Nginx to listen on port 80
-cat <<- EOF > sudo /etc/nginx/sites-available/default
+cat <<- EOF > /etc/nginx/sites-available/default
 	server {
 		listen 80;
 		server_name _;
