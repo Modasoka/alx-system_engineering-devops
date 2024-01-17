@@ -22,7 +22,7 @@ cat <<- EOF > sudo /var/www/html/404.html
 EOF
 
 # stop server before making any changes to config
-sudo service nginx stop
+# sudo service nginx stop
 
 # config Nginx to listen on port 80
 cat <<- EOF > sudo /etc/nginx/sites-available/default
