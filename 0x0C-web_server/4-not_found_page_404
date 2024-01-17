@@ -16,6 +16,11 @@ cat <<- EOF > sudo /var/www/html/index.html
 	</html>
 EOF
 
+# custom 404 page with string
+cat <<- EOF > sudo /var/www/html/404.html
+	Ceci n'est pas une page
+EOF
+
 # config Nginx to listen on port 80
 cat <<- EOF > sudo /etc/nginx/sites-available/default
 	server {
