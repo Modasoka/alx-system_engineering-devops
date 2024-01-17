@@ -17,11 +17,9 @@ cat <<- EOF > sudo /var/www/html/index.html
 EOF
 
 # custom 404 page with string
-# cat <<- EOF > sudo /var/www/html/404.html
-# 	Ceci n'est pas une page
-# EOF
-touch /etc/nginx/html/404.html
-echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
+cat <<- EOF > sudo /var/www/html/404.html
+	Ceci n'est pas une page
+EOF
 
 # stop server before making any changes to config
 sudo service nginx stop
@@ -39,6 +37,11 @@ cat <<- EOF > sudo /etc/nginx/sites-available/default
 		}
 		location /redirect_me {
 			return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+		}
+		error_page 404 /404.html;
+		location /404 {
+			root /var/www/html;
+			internal;
 		}
 	}
 EOF
