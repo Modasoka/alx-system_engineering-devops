@@ -21,4 +21,4 @@ backend web-backend
 sudo chmod +x /etc/init.d/haproxy
 
 # start haproxy service
-sudo servicd haproxy start
+sudo service haproxy start
