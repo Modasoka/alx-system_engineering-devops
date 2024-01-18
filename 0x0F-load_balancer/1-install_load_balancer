@@ -17,6 +17,8 @@ backend web-backend
         server 111427-web-01 54.175.44.151:80 check
         server 111427-web-02 34.232.66.141:80 check" >> /etc/haproxy/haproxy.cfg
 
-# enable & start haproxy service
-# sudo systemctl enable haproxy
-# sudo systemctl start haproxy
+# 
+sudo chmod +x /etc/init.d/haproxy
+
+# start haproxy service
+sudo servicd haproxy start
