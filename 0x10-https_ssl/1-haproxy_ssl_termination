@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# create certificate & config HAproxy to accept encrypted traffic
+# for subdomain
