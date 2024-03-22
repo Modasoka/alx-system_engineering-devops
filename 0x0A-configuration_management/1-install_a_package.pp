@@ -1,9 +1,6 @@
-# create a file in /tmp with specific requirements
-
-file { 'school':
-  path    => '/tmp/school',
-  mode    => '0744',
-  owner   => 'www-data',
-  group   => 'www-data',
-  content => 'I love Puppet',
+##!/usr/bin/pup
+# Using Puppt to install flask from pip3
+package {'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3'
 }
