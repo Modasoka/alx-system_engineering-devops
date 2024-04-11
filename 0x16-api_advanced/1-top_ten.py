@@ -10,13 +10,12 @@ def top_ten(subreddit):
     """
     Retrieves the top 10 hot posts of a subreddit
     """
-    url = "https://www.reddit.com/r/" + subreddit + "/hot.json"
-    header = {"User-Agent": "MyUser"}
-    response = requests.get(url, allow_redirects=False, headers=header)
-
-    if response.status_code == 404:
-        print(None)
-    if response.status_code == 200:
-        req = response.json().get("data").get("children")
-        for i in range(10):
-            print(req[i].get("data").get("title"))
+    sub_info = requests.get("https://www.reddit.com/r/{}/hot.json?limit=10"
+                            .format(subreddit),
+                            headers={"User-Agent": "My-User-Agent"},
+                            allow_redirects=False)
+    if sub_info.status_code >= 300:
+        print('None')
+    else:
+        [print(child.get("data").get("title"))
+         for child in sub_info.json().get("data").get("children")]
